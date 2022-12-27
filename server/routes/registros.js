@@ -3,7 +3,11 @@ const app = express();
 
 const Registro = require('../models/registro');
 
-
+app.get('/', () => {
+    res.json({
+        msg: "Hola mundo"
+    })
+})
 //================================
 // Mostrar todos los registros
 //================================
